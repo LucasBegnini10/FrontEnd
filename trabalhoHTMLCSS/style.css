@@ -30,6 +30,13 @@ header {
     width: 50px;
     height: 50px;
 }
+.hamburguer:hover{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
 
 .pesquisa{
     display: flex;
@@ -40,6 +47,7 @@ header {
     border-radius: 300px;
     height: 35px;
     text-align: center;
+    border-color: #007FFF;
 }
 .lupa{
     width: 50px;
@@ -74,16 +82,38 @@ header {
     margin-left: 15px;
 }
 
+.emailImagem:hover{
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
 .telefoneImagem{
     width: 50px;
     height: 50px;
     margin-left: 15px;
+}
+.telefoneImagem:hover{
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition-duration: 0.5s;
 }
 
 .localizacaoImagem{
     width: 30px;
     height: 50px;
     margin-left: 15px;
+}
+.localizacaoImagem:hover{
+    width: 40px;
+    height: 60px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition-duration: 0.5s;
 }
 
 .contatos{
@@ -116,7 +146,9 @@ nav{
     
 
 }
-
+.itemNav{
+    text-decoration: none;
+}
 .itemNav{
     color:#007FFF;
     font-size:25px;
@@ -135,6 +167,11 @@ nav{
     height: 70px;
     width: 70px;
 }
+.promocaoImagem:hover{
+    transform: rotate3d(0, 1, 0, 360deg);
+    transition-duration: 4s;
+}
+
 .promocoes{
     font-size: 50px;
     margin-left: 20px;
@@ -147,6 +184,17 @@ nav{
     display: inline-block;
     margin-top: 20px;
     margin-left: 20px;
+    border:10px #007FFF solid; 
+    background-color: black;
+    cursor: pointer;
+}
+
+.produto:hover{
+    display: inline;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 10px white solid;
+    background-color: #007FFF;
 }
 .valor{
     text-align: center;
@@ -159,10 +207,7 @@ nav{
     font-size: 13px;
     margin-top: 10px;
 }
-.produto{
-    border:10px #007FFF solid; 
-    background-color: black;
-}
+
 .imagemProduto{
     width: 200px;
     height: 190px;
@@ -174,15 +219,7 @@ nav{
     margin-left: 100px;
     margin-top: 10px;
     margin-bottom: 30px;
-}
-.divPromocoes2{
-    display: flex;
-    justify-content: space-between;
-    margin-right: 100px;
-    margin-left: 100px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-
+    flex-wrap: wrap;
 }
 .ver{
     float: right;
@@ -194,6 +231,7 @@ nav{
     justify-content: space-between;
     margin-left: 100px;
     margin-right: 100px;   
+    flex-wrap: wrap;
 }
 .divDepartamentos2{
     display: flex;
@@ -202,6 +240,7 @@ nav{
     margin-right: 100px;  
     margin-top: 50px; 
     margin-bottom: 100px;
+    flex-wrap: wrap;
 }
 footer{
     width: 100%;
@@ -233,7 +272,7 @@ footer{
     align-items: center;
     justify-content: center;
     text-align: center;
-    
+    border-color: #007FFF;
 }
 footer{
     justify-content: space-between;
@@ -312,12 +351,14 @@ footer{
     text-align: center;
     margin-top: 40px;
     font-size: 20px;
+    border-color: #007FFF;
     
 }
 .bt1:hover{
     color: #007FFF;
     background-color: white;
     transition: 0.5s;
+    border-radius: 0%;
 }
 .navContato{
     background-color: white;
@@ -326,8 +367,83 @@ footer{
     justify-content: center;
     margin-bottom: 40px;
 }
+.localizacao{
+    display: flex;
+    justify-content: center;
+}
 
+@media screen and (max-width: 1200px) {
+   .divPromocoes{
+    margin-left: 20px;
+    }
+    .escritaPerfil{
+        display: none;
+    }
+    .lupa{
+        display: none;
+    }
+    .divDepartamentos{
+        margin-left: 20px;
+    }
+    .divDepartamentos2{
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 860px){   
+    .inputHeader{
+        display: none;
+    }
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+    .itemNav{
+        font-size: 18px;
+    }
+    .redes p{
+        display: none;
+    }
+    .inputFooter{
+        width: 50%;
+    }
+    .emailFooter p{
+        font-size: 15px;
+    }
+    .itemFooter p, u{
+        font-size: 15px;
+}
+}
 
-
-
+@media screen and (max-width: 679px){
+    .perfilImagem{
+        display: none;
+    }
+    .contatos{
+        display: none;
+    }
+    .itemNav{
+        font-size: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .hamburguer{
+        display: none;
+    }
+    .itemNav{
+        font-size: 13px;
+    }
+    .logoImagem{
+        margin-right: 10px;
+    }
+    .promocoes{
+        font-size: 40px;
+        margin-left: 10px;
+    }
+    .promocaoImagem{
+        width: 40px;
+        height: 40px;
+    }
+}
 
