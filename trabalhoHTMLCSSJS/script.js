@@ -18,6 +18,15 @@ function clickClose(){
         x.style.display ="none";
     }  
 }
+function clickClose2(){
+    var x = document.getElementById('itensHamburguer');
+   
+   if(x.style.display ==='none'){
+       x.style.display = 'block';
+   }else{
+       x.style.display ="none";
+   }  
+}
 
 function functionValidar(){
     let senha2 = document.getElementById('senha2').value;
@@ -66,7 +75,7 @@ function functionEntrar(){
 function verSenha1(){
 
     if(senha1.type=="password"){
-        senha1.type="text";
+        senha1.type="text"  
     }else{
         senha1.type="password";
     }
@@ -90,4 +99,18 @@ function verSenha3(){
     }
 }
 
+const imgs = document.getElementById("imgCarrosel");
+const img = document.querySelectorAll(".imagemCarrosel");
 
+let idx = 0; 
+
+function carrosel(){
+  idx++;
+
+  if(idx > img.length - 1){
+    idx = 0;
+  }
+
+  imgs.style.transform = `translateX(${-idx * 800}px)`;
+}
+setInterval(carrosel, 3000);

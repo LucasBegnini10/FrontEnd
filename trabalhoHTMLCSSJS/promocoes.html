@@ -5,13 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promoções</title>
+    
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="script.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="itensHamburguer">
+        <div class="fechar">
+            <i onclick="clickClose2()" class="fas fa-window-close" style="color: white; font-size: 40px; float: right; margin: 10px; cursor: pointer;"></i>
+        </div>
+        
+        <div class="hambIcons">
+            <i class="fas fa-user-circle" style="font-size: 50px; color: white;" ></i>
+            <a href="login.html"><h1 class="hambTxt">Meu Perfil</h1></a>
+        </div>
+        
+        <hr class="linhaHamb">
+        
+        <div class="hambIcons">
+            <i class="fas fa-info-circle" style="font-size: 50px; color: white;"></i>
+            <a href="contatos.html"><h1 class="hambTxt">Contatos</h1></a>
+        </div>
+        
+        <hr class="linhaHamb">
+        
+        <div class="hambIcons">
+            <i class="fas fa-map-marker-alt" style="font-size: 50px; color: white;"></i>
+            <a href="googlemaps.html"><h1 class="hambTxt">Localização</h1></a>
+        </div>
+        
+        <hr class="linhaHamb"> 
+
+        <a href="index.html"><img src="img/logo.png" alt="Logo" style="margin-left: 30px; margin-top: 20px;"></a>
+
+        <div class="btnHamb">
+            <a href="login.html"><button class="botaoHamb">ENTRAR</button></a>
+            <br>
+            <a href="login.html"><button class="botaoHamb">CADASTRAR</button></a>
+        </div>
+    </div>
     <header>
-        <div class="iconeHamburguer">
-            <img class="hamburguer" src="img/hamburguer.png" alt="ícone Hamburguer">
+        <div class="hamburguer">
+            <img id="iconeHamburguer" src="img/hamburguer.png" alt="ícone Hamburguer">
         </div>
         
         <div class="pesquisa">
@@ -127,15 +167,6 @@
             </div>
         </div>
     </div>
-    
-    
-    
-    
-    
-    
-    
-    
-
     <footer>
         <div class="itemFooter">
             <a href="https://goo.gl/maps/fWYPPoJwCqReDwQ28" target="_blank"><p class="txtFooter">Localização</p></a>
@@ -152,6 +183,15 @@
             <a href="https://www.facebook.com/senaisantabarbara" target="_blank"><img class="imgFacebook"src="img/faceboook.png" alt="Facebook"></a>
         </div>
     </footer>
+
+    <script>
+        $(document).ready(function(){
+            $("#iconeHamburguer").click(function(){
+                $("#itensHamburguer").slideToggle("slow");
+                
+            });
+        });
+    </script>
 
 </body>
 </html>

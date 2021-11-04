@@ -5,46 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
+    
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link rel="stylesheet" href="style.css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+   
+    <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="script.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     
 </head>
 <body>
-    <header>
-        <div class="iconeHamburguer">
-            <img class="hamburguer" src="img/hamburguer.png" alt="ícone Hamburguer">
-        </div>
-        
-        <div class="pesquisa">
-            <img class="lupa" src="img/lupa.png" alt="Ícone Lupa">
-            <input type= "text" class="inputHeader" placeholder="Pesquise algo">
-        </div>
-        
-        <div class="logoDiv">
-            <a href="index.html"><img class="logoImagem" src="img/logo.png" alt="Logo"></a>
-        </div>
-        
-        <div class="perfilDiv">
-            <img class="perfilImagem"src="img/perfil.png" alt="Ícone Perfil">
-            <div class="escritaPerfil">
-                <a style ="color: white;"href="login.html">Login</a>
-                <br>
-                <a style="color: white;" href="login.html">Cadastro</a>
-            </div>
-        </div>
-        
-        <div class="contatos">
-            <ul class="listaContatos">
-               <li><a href="contatos.html"><img class = "emailImagem"src="img/email.png" alt="Ícone Email"></a></li>
-               <li><a href="contatos.html"><img class="telefoneImagem" src="img/telefone.png" alt="Ícone Telefone"></a></li>
-               <li><a href="googlemaps.html"><img class="localizacaoImagem"src="img/localizacao.png" alt="Ícone Localização"></a></li>
-            </ul>
+  <div id="itensHamburguer">
+    <div class="fechar">
+        <i onclick="clickClose2()" class="fas fa-window-close" style="color: white; font-size: 40px; float: right; margin: 10px; cursor: pointer;"></i>
+    </div>
+    
+    <div class="hambIcons">
+        <i class="fas fa-user-circle" style="font-size: 50px; color: white;" ></i>
+        <a href="login.html"><h1 class="hambTxt">Meu Perfil</h1></a>
+    </div>
+    
+    <hr class="linhaHamb">
+    
+    <div class="hambIcons">
+        <i class="fas fa-info-circle" style="font-size: 50px; color: white;"></i>
+        <a href="contatos.html"><h1 class="hambTxt">Contatos</h1></a>
+    </div>
+    
+    <hr class="linhaHamb">
+    
+    <div class="hambIcons">
+        <i class="fas fa-map-marker-alt" style="font-size: 50px; color: white;"></i>
+        <a href="googlemaps.html"><h1 class="hambTxt">Localização</h1></a>
+    </div>
+    
+    <hr class="linhaHamb"> 
 
-        </div>
-     </header>
+    <a href="index.html"><img src="img/logo.png" alt="Logo" style="margin-left: 30px; margin-top: 20px;"></a>
+
+    <div class="btnHamb">
+        <a href="login.html"><button class="botaoHamb">ENTRAR</button></a>
+        <br>
+        <a href="login.html"><button class="botaoHamb">CADASTRAR</button></a>
+    </div>
+</div>
+  <header>
+      <div class="hamburguer">
+          <img id="iconeHamburguer" src="img/hamburguer.png" alt="ícone Hamburguer">
+      </div>
+      
+      <div class="pesquisa">
+          <img class="lupa" src="img/lupa.png" alt="Ícone Lupa">
+          <input type= "search" class="inputHeader" placeholder="Pesquise algo">
+      </div>
+      
+      <div class="logoDiv">
+          <a href="index.html"><img class="logoImagem" src="img/logo.png" alt="Logo"></a>
+      </div>
+      
+      <div class="perfilDiv">
+          <img class="perfilImagem"src="img/perfil.png" alt="Ícone Perfil">
+          <div class="escritaPerfil">
+              <a style ="color: white;"href="login.html">Login</a>
+              <br>
+              <a style="color: white;" href="login.html">Cadastro</a>
+          </div>
+      </div>
+      
+      <div class="contatos">
+          <ul class="listaContatos">
+             <li><a href="contatos.html"><img class = "emailImagem"src="img/email.png" alt="Ícone Email"></a></li>
+             <li><a href="contatos.html"><img class="telefoneImagem" src="img/telefone.png" alt="Ícone Telefone"></a></li>
+             <li><a href="googlemaps.html"><img class="localizacaoImagem"src="img/localizacao.png" alt="Ícone Localização"></a></li>
+          </ul>
+
+      </div>
+   </header>
      <div class="navContato">
         <nav>
             <a class="itemNav" href="index.html">Início</a>
@@ -58,7 +98,7 @@
     
     <!--BOOTSTRAP-->
 
-    <div style="color: white;"class="container">
+    <div style="color: white; margin-bottom: 100px;"class="container" >
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
             <div class="well well-sm">
@@ -106,22 +146,32 @@
 
     <!--BOOTSTRAP-->
 
-    <footer class="rodape">
-        <div class="itemFooter">
-            <a href="https://goo.gl/maps/fWYPPoJwCqReDwQ28" target="_blank"><p class="txtFooter">Localização</p></a>
-            <p class="txtFooter"><u>Quem nós somos</u></p>
-            <p class="txtFooter"><u>Baixe os aplicativos</u> </p>
-        </div>
-        <div class="emailFooter">
-            <p class="txtFooter">Digite seu email e receba ofertas exclusivas:</p>
-            <input class = "inputFooter" type="email" placeholder="Digite seu email">
-        </div>
-        <div class="redes">
-            <p class="txtFooter">Siga-nos nas redes sociais</p>
-            <a href="https://www.instagram.com/senaisantabarbara/" target="_blank"><img class="imgFooter" src="img/instagram.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/senaisantabarbara" target="_blank"><img class="imgFacebook"src="img/faceboook.png" alt="Facebook"></a>
-        </div>
-    </footer>
+    <footer>
+      <div class="itemFooter">
+          <a href="https://goo.gl/maps/fWYPPoJwCqReDwQ28" target="_blank"><p class="txtFooter">Localização</p></a>
+          <p class="txtFooter"><u>Quem nós somos</u></p>
+          <p class="txtFooter"><u>Baixe os aplicativos</u> </p>
+      </div>
+      <div class="emailFooter">
+          <p class="txtFooter">Digite seu email e receba ofertas exclusivas:</p>
+          <input class = "inputFooter" type="email" placeholder="Digite seu email">
+      </div>
+      <div class="redes">
+          <p class="txtFooter">Siga-nos nas redes sociais</p>
+          <a href="https://www.instagram.com/senaisantabarbara/" target="_blank"><img class="imgFooter" src="img/instagram.png" alt="Instagram"></a>
+          <a href="https://www.facebook.com/senaisantabarbara" target="_blank"><img class="imgFacebook"src="img/faceboook.png" alt="Facebook"></a>
+      </div>
+  </footer>
     
+    <script>
+      $(document).ready(function(){
+          $("#iconeHamburguer").click(function(){
+              $("#itensHamburguer").slideToggle("slow");
+              
+          });
+      });
+    </script>
+
+
 </body>
 </html>
