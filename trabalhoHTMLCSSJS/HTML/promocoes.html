@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início</title>
+    <title>Promoções</title>
     
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="script.js"defer></script>
-
+    <script type="text/javascript" src="script.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+   
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -41,7 +41,8 @@
         
         <hr class="linhaHamb"> 
 
-        <a href="index.html"><img src="img/logo.png" alt="Logo" style="margin-left: 30px; margin-top: 20px;"></a>
+        <a href="index.html"><img src="img/logo.png" alt="Logo" style= "margin-top: 20px;margin-bottom: 20px; height: 70px; width: 200px;"></a>
+
 
         <div class="btnHamb">
             <a href="login.html"><button class="botaoHamb">ENTRAR</button></a>
@@ -49,7 +50,6 @@
             <a href="login.html"><button class="botaoHamb">CADASTRAR</button></a>
         </div>
     </div>
-    
     <header>
         <div class="hamburguer">
             <img id="iconeHamburguer" src="img/hamburguer.png" alt="ícone Hamburguer">
@@ -57,7 +57,7 @@
         
         <div class="pesquisa">
             <img class="lupa" src="img/lupa.png" alt="Ícone Lupa">
-            <input type= "search" class="inputHeader" placeholder="Pesquise algo">
+            <input type= "text" class="inputHeader" placeholder="Pesquise algo">
         </div>
         
         <div class="logoDiv">
@@ -81,7 +81,7 @@
             </ul>
 
         </div>
-     </header>
+    </header>
     <div class="nav">
         <nav>
             <a class="itemNav" href="index.html">Início</a>
@@ -92,27 +92,14 @@
         </nav>   
     </div>
     
-    
-    <div class="carroselMaior">
-        <div class="carrosel">
-            <div class="container" id="imgCarrosel">
-                <img class="imagemCarrosel"src="img/cs.jpg" alt="">
-                <img class="imagemCarrosel"src="img/lol.jpg" alt="">
-                <img class="imagemCarrosel"src="img/valorant.jpg" alt="">
-                <img class="imagemCarrosel"src="img/gta.jpg" alt="">
-            </div>
-	    </div>
-	</div>
-    
     <div class="titulo">
         <img class ="promocaoImagem"src="img/promocao.png" alt="Ícone Promoção">
         <h1 class="promocoes">Promoções</h1>
     </div>
     
     
- 
     <div class="divPromocoes">
-        <div onclick="clickProduto()" class="produto">
+        <div class="produto">
             <div class="nomeProduto">
                 <h2>Pc Gamer SENAI<br>i7 - RTX 2060</h2>
             </div>
@@ -123,7 +110,7 @@
                 <p><u>R$6035,00</u></p>
             </div>
         </div>
-        <div onclick ="clickProduto()"class="produto">
+        <div class="produto">
             <div class="nomeProduto">
                 <h2>Headset Gamer<br>SENAI</h2>
             </div>
@@ -134,7 +121,7 @@
                 <p><u>R$305,80</u></p>
             </div>
         </div>
-        <div onclick="clickProduto()" class="produto">
+        <div class="produto">
             <div class="nomeProduto">
                 <h2>Mouse Gamer<br>SENAI</h2>
             </div>
@@ -145,7 +132,9 @@
                 <p><u>R$104,54</u></p>
             </div>
         </div>
-        <div onclick="clickProduto()" class="produto">
+    </div>
+    <div class="divPromocoes">
+        <div class="produto">
             <div class="nomeProduto">
                 <h2>Console Playstation <br>5</h2>
             </div>
@@ -156,7 +145,7 @@
                 <p><u>R$5.322,11</u></p>
             </div>
         </div>
-        <div onclick="clickProduto()" class="produto">
+        <div class="produto">
             <div class="nomeProduto">
                 <h2>Grand Theft <br> Auto V - PS4</h2>
             </div>
@@ -167,164 +156,18 @@
                 <p><u>R$203,98</u></p>
             </div>
         </div>
-    </div>
-    <div class="ver">
-        <a style = "color: white;"href="promocoes.html">Ver todas promoções -> </u></a>
-    </div>
-    
-    <div class="titulo">
-        <img class ="promocaoImagem"src="img/departamentos.png" alt="Ícone Promoção">
-        <h1 class="promocoes">Departamentos</h1>
-    </div>
-    
-    <div class="divDepartamentos">
         <div class="produto">
             <div class="nomeProduto">
-                <h2>PERIFÉRICOS</h2>
+                <h2>Cadeira Gamer</h2>
             </div>
             <div class="foto">
-                <img class="imagemProduto" src="img/perifericos.png" alt="Periféricos">
+                <img class="imagemProduto" src="img/cadeira.png" alt="Cadeira Gamer">
             </div>
-        </div>
-        <div class="produto">
-            <div class="nomeProduto">
-                <h2>HARDWARE</h2>
-            </div>
-            <div class="foto">
-                <img class="imagemProduto" src="img/hardware.png" alt="Headset Gamer">
-            </div>
-        </div>
-        <div class="produto">
-            <div class="nomeProduto">
-                <h2>CELULAR</h2>
-            </div>
-            <div class="foto">
-                <img class="imagemProduto" src="img/celular.png" alt="Mouse Gamer">
+            <div class="valor">
+                <p><u>R$203,98</u></p>
             </div>
         </div>
     </div>
-    
-    <div class="divDepartamentos2">
-        <div class="produto">
-            <div class="nomeProduto">
-                <h2>PC GAMER</h2>
-            </div>
-            <div class="foto">
-                <img class="imagemProduto" src="img/pcgamer.png" alt="Pc Gamer">
-            </div>
-        </div>
-        <div class="produto">
-            <div class="nomeProduto">
-                <h2>VÍDEO GAME</h2>
-            </div>
-            <div class="foto">
-                <img class="imagemProduto" src="img/videogame.png" alt="Headset Gamer">
-            </div>
-        </div>
-        <div class="produto">
-            <div class="nomeProduto">
-                <h2>NOTEBOOK</h2>
-            </div>
-            <div class="foto">
-                <img class="imagemProduto" src="img/notebook.png" alt="Mouse Gamer">
-            </div>
-        </div>
-    </div>
-    
-
-    <div id="modal">
-        <button class="close" onclick="clickClose()">X</button>
-        
-        <!--Copiado-->
-        <div class="slidershow middle">
-
-            <div class="slides">
-              <input type="radio" name="r" id="r1" checked>
-              <input type="radio" name="r" id="r2">
-              <input type="radio" name="r" id="r3">
-              <input type="radio" name="r" id="r4">
-              <input type="radio" name="r" id="r5">
-              <div class="slide s1">
-                <div class="inf">
-                    <h1>PC GAMER SENAI</h1>
-                    <br>
-                    <p><b>Processador</b><br>
-                        - Intel Core i7-10700K Avengers Edition,<br> 8-Core, 16-Threads, 3.8GHz (5.1GHz Turbo)<br><br>
-                    <b>Cooler</b><br>
-                        - Pichau Gaming Sage X Led Branco,<br> PG-SGX-WHITE<br><br>
-                    <b>Placa de Vídeo</b><br>
-                        - Gigabyte GeForce RTX 2060 D6, 6GB, <br>GDDR6, 192-bit, GV-N2060D6-6GD-REV-2.0<br><br>
-                    <b>Fonte</b><br>
-                        - 600W 80 Plus PFC Ativo<br><br>
-                    <b>Memória</b><br>
-                        - Memória 8GB (1x8) DDR4<br><br></p>
-                    </p>
-                  </div>
-                <img src="img/pc1.png" alt="">
-              </div>
-              
-              <div class="slide">
-                <div class="inf">
-                    <h1>HEADSET GAMER <br>REDRAGON</h1>
-                    <br>
-                    <p><b>Características</b><br>
-                        -Iluminação RGB Redragon Chroma <br>Mk.II com 4 efeitos<br><br>
-                    <b>Conexão</b><br>
-                        - 1 x UBS 2.0<br><br>
-                    <b>Sensibilidade</b><br>
-                        - 98 ± 3dB S.P.L. at 1KHz<br><br>
-                    <b>Comprimento do cabo</b><br>
-                        - 1,8m<br><br></p>
-                </div>
-                <img src="img/headset1.png" alt="">
-              </div>
-              
-              <div class="slide">
-                <div class="inf">
-                    <h1 style="display: flex; justify-content: center; text-align: center;">MOUSE GAMER<br>LOGITECH</h1>
-                    <iframe width="600px" height="350px" src="https://www.youtube.com/embed/EAXihQFJBR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-              </div>
-              
-              <div class="slide">
-                <div class="inf">
-                    <h1>Console Playstation 5</h1>
-                    <br>
-                    <p><b>Capacidade de Armazenamento</b><br>
-                        -Iluminação RGB Redragon Chroma <br>Mk.II com 4 efeitos<br><br>
-                        <b>Recursos</b><br>
-                        - Compatível com 4K, Controlado por movimentos,<br> Retrocompatível, Suporta Blu-ray
-                        <br><br></p>
-                </div>
-                <img src="img/ps5.png" alt="">
-              </div>
-            
-              <div class="slide">
-                <div class="inf">
-                    <h1>Grand Theft Auto 5</h1>
-                    <br>
-                    <p><b>Sobre</b><br>
-                        - Grand Theft Auto V é um jogo eletrônico<br> de ação-aventura  desenvolvido pela<br> Rockstar Northe publicado pela<br> Rockstar Games.
-                    </p>
-                    <a href="https://www.rockstargames.com/br/" target="_blank"><button class="btRG">Clique aqui para acessar<br>Rockstar Games</button></a>
-                </div>
-                <img src="img/gta.png" alt="">
-              </div>
-            
-            </div>
-      
-            <div class="navigation">
-              <label for="r1" class="bar"></label>
-              <label for="r2" class="bar"></label>
-              <label for="r3" class="bar"></label>
-              <label for="r4" class="bar"></label>
-              <label for="r5" class="bar"></label>
-            </div>
-          </div>
-        <!--Copiado-->
-        
-    </div> 
-
     <footer>
         <div class="itemFooter">
             <a href="https://goo.gl/maps/fWYPPoJwCqReDwQ28" target="_blank"><p class="txtFooter">Localização</p></a>
@@ -342,9 +185,6 @@
         </div>
     </footer>
 
-
-        <!--SCRIPT-->
-
     <script>
         $(document).ready(function(){
             $("#iconeHamburguer").click(function(){
@@ -353,7 +193,6 @@
             });
         });
     </script>
-
 
 </body>
 </html>

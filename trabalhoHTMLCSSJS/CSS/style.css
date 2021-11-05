@@ -449,7 +449,8 @@ footer{
     }
     .itemFooter p, u{
         font-size: 15px;
-}
+    }
+    
 }
 
 @media screen and (max-width: 679px){
@@ -476,6 +477,7 @@ footer{
     .cadastro{
         margin-right: 50px;
     }
+    
 }
 @media screen and (max-width: 410px) {
     .hamburguer{
@@ -653,7 +655,7 @@ footer{
 }
 
 #itensHamburguer{
-    width: 400px;
+    width: 200px;
     height: 100%;
     position: fixed;
     display: none;
@@ -670,6 +672,7 @@ footer{
 .hambTxt{
     color: white;
     margin-left: 20px;
+    font-size: 20px;
 }
 .linhaHamb{
 
@@ -690,7 +693,7 @@ footer{
     color: #007FFF;
     font-size: 20px;
     cursor: pointer;
-    width: 200px;
+    width: 150px;
     height: 50px;
 }
 
@@ -698,7 +701,7 @@ footer{
     box-shadow: 2px 2px 2px black;
     overflow: hidden;
     height: 500px;
-    width: 800px;
+    width: 600px;
     align-items: center;
   }
   .container{
@@ -709,7 +712,7 @@ footer{
   .imagemCarrosel{
     object-fit: cover;
     height: 500px;
-    width: 800px;
+    width: 600px;
   }
   .carroselMaior{
       display: flex;
@@ -717,3 +720,16 @@ footer{
       margin-top: 30px;
       
   }
+  @media screen and (max-width: 679px){
+   .carroselMaior{
+       display: none;
+   }
+   }
+  
+   @media screen and (max-width: 855px) {
+       .logoImagem{
+           width: 200px;
+           height: 100px;
+           position: static;
+       }
+   }

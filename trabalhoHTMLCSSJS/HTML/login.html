@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Departamentos</title>
+    <title>Login</title>
     
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="script.js"></script>
@@ -41,7 +41,7 @@
         
         <hr class="linhaHamb"> 
 
-        <a href="index.html"><img src="img/logo.png" alt="Logo" style="margin-left: 30px; margin-top: 20px;"></a>
+        <a href="index.html"><img src="img/logo.png" alt="Logo" style= "margin-top: 20px;margin-bottom: 20px; height: 70px; width: 200px;"></a>
 
         <div class="btnHamb">
             <a href="login.html"><button class="botaoHamb">ENTRAR</button></a>
@@ -49,6 +49,7 @@
             <a href="login.html"><button class="botaoHamb">CADASTRAR</button></a>
         </div>
     </div>
+    
     <header>
         <div class="hamburguer">
             <img id="iconeHamburguer" src="img/hamburguer.png" alt="ícone Hamburguer">
@@ -56,7 +57,7 @@
         
         <div class="pesquisa">
             <img class="lupa" src="img/lupa.png" alt="Ícone Lupa">
-            <input type= "text" class="inputHeader" placeholder="Pesquise algo">
+            <input type= "search" class="inputHeader" placeholder="Pesquise algo">
         </div>
         
         <div class="logoDiv">
@@ -80,8 +81,8 @@
             </ul>
 
         </div>
-    </header>
-    <div class="nav">
+     </header>
+     <div class="nav">
         <nav>
             <a class="itemNav" href="index.html">Início</a>
             <a class="itemNav" href="departamentos.html">Departamentos</a>
@@ -90,65 +91,39 @@
             <a class="itemNav" href="login.html">Login</a>
         </nav>   
     </div>
-    
+
     <div class="titulo">
-        <img class ="promocaoImagem"src="img/departamentos.png" alt="Ícone Promoção">
-        <h1 class="promocoes">Departamentos</h1>
-    </div>
-    <div class="divDepartamentos">
-        <div class="produto">
-            <div class="nomeProduto">
-                <h2>PERIFÉRICOS</h2>
-            </div>
-            <div class="foto">
-                <img class="imagemProduto" src="img/perifericos.png" alt="Periféricos">
-            </div>
-        </div>
-        <div class="produto">
-            <div class="nomeProduto">
-                <h2>HARDWARE</h2>
-            </div>
-            <div class="foto">
-                <img class="imagemProduto" src="img/hardware.png" alt="Headset Gamer">
-            </div>
-        </div>
-        <div class="produto">
-            <div class="nomeProduto">
-                <h2>CELULAR</h2>
-            </div>
-            <div class="foto">
-                <img class="imagemProduto" src="img/celular.png" alt="Mouse Gamer">
-            </div>
-        </div>
-    </div>
-    
-    <div class="divDepartamentos2">
-        <div class="produto">
-            <div class="nomeProduto">
-                <h2>PC GAMER</h2>
-            </div>
-            <div class="foto">
-                <img class="imagemProduto" src="img/pcgamer.png" alt="Pc Gamer">
-            </div>
-        </div>
-        <div class="produto">
-            <div class="nomeProduto">
-                <h2>VÍDEO GAME</h2>
-            </div>
-            <div class="foto">
-                <img class="imagemProduto" src="img/videogame.png" alt="Headset Gamer">
-            </div>
-        </div>
-        <div class="produto">
-            <div class="nomeProduto">
-                <h2>NOTEBOOK</h2>
-            </div>
-            <div class="foto">
-                <img class="imagemProduto" src="img/notebook.png" alt="Mouse Gamer">
-            </div>
-        </div>
+        <i class="fas fa-user" style="font-size: 60px; color: white;" ></i>
+        <h1 class="indentificacaoTxt"><h1>INDENTIFICAÇÃO</h1>
     </div>
 
+    <div class="indentificacao">
+        <div class="jaCadastro">
+            <h2 class="txtLogin">JÁ TENHO CADASTRO</h2>
+            <input id="email1"type="email" placeholder="Email*">
+            <br>
+            <input id="senha1" type="password" placeholder="Senha*">
+            <i onclick="verSenha1()" class="fas fa-eye-slash" style="float: right; position: relative; top: -28px; color: black; left: -5px; cursor: pointer;"></i>
+            <br>
+            <button onclick="functionEntrar()" id="btEntrar">ENTRAR</button>
+        </div>
+        
+        <div class="cadastro">
+            <h2 class="txtLogin">QUERO ME CADASTRAR</h2>
+            <input id="email2" type="email" placeholder="Email*" >
+            <br>
+            <input id="senha2" type="password" placeholder="Crie sua senha*">
+            <i onclick="verSenha2()" class="fas fa-eye-slash" style="float: right; position: relative; top: -28px; color: black; left: -5px; cursor: pointer;"></i>
+            <br>
+            <input id="confirmeSenha" type="password" placeholder="Confirme sua senha*">
+            <i onclick="verSenha3()" class="fas fa-eye-slash" style="float: right; position: relative; top: -28px; color: black; left: -5px; cursor: pointer;"></i>
+            <p id="avisoLogin">Senhas Diferentes<br>Clique novamente no botão<br> e refaça a senha!</P>
+            <p id="senhaValida">Senhas Válidas</p>    
+            <br>
+            <button onclick="functionValidar()"id="btValidar">CADASTRAR</button>
+        </div>
+
+    </div>
     <footer>
         <div class="itemFooter">
             <a href="https://goo.gl/maps/fWYPPoJwCqReDwQ28" target="_blank"><p class="txtFooter">Localização</p></a>
@@ -174,9 +149,7 @@
             });
         });
     </script>
-
-
-
-
+    
+    
 </body>
 </html>
